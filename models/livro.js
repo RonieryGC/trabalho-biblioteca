@@ -12,6 +12,7 @@ const Livro = conexao.Schema({
         type:'String',
         required: true
     },
+    foto: 'String',
     ano_de_publicacao: {
         type: 'Date',
     }
