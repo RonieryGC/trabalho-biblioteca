@@ -1,0 +1,28 @@
+<%-include('cabecalho.ejs') %>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-floating mb-3">
+            <input type="text" class='form-control' name="nome" id="nome" placeholder="Digite seu nome.">
+            <label class="form-label" for="nome">Nome:</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class='form-control' name="email" id="email" placeholder="Digite seu email.">
+            <label class="form-label" for="email">Email:</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class='form-control' name="senha" id="senha" placeholder="Digite sua senha.">
+            <label class="form-label" for="senha">Senha:</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="file" class='form-control' name="foto" id="foto">
+            <label class="form-label" for="foto">Foto:</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="date" class='form-control' name="datanasc" id="datanasc">
+            <label class="form-label" for="datanasc">Data de Nascimento</label>
+        </div>
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary mb-3" value="Enviar">
+            <input type="reset" class="btn btn-secundary mb-3" value="Limpar">
+        </div>
+    </form>
+    <%-include('rodape.ejs') %>

@@ -1,9 +1,6 @@
 import Usuario from '../models/usuario.js'
 import Post from '../models/post.js'
-
-export function helloworld(req,res){
-    res.render('index')
-}
+import livro from '../models/livro.js'
 
 export async function cadastralivro(req,res){
     const livro = new livro({
@@ -17,7 +14,12 @@ export async function cadastralivro(req,res){
 
     console.log(livro)
 
-    await liro.save()
+    await livro.save()
     res.render('livro')
 
+}
+
+export async function livro(req, res) {
+    let livros = await livro.find({})
+    res.render('livro',{Livros:livros})
 }
